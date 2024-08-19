@@ -1,0 +1,223 @@
+ /* Estilo general del cuerpo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Imagenes/Seguridad.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: #007BFF;
+    opacity: 85%;
+    color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+}
+
+/* Estilo del contenedor principal con opacidad ajustada */
+.container {
+    background-color: rgba(72, 136, 255, 0.8); 
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 1200px; 
+    margin-top: 10rem; 
+    margin-bottom: 4rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el envoltorio de los inputs */
+.input-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem; 
+    margin-bottom: 1rem; 
+    width: 100%; 
+}
+
+/* Estilo para los contenedores de inputs */
+.input-container, .input-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; 
+    height: 200px;
+    padding: 1rem;
+    background-color: #fff; 
+    border-radius: 10px; 
+}
+
+/* Estilo de las etiquetas */
+.input-label {
+    font-weight: bold;
+    font-size: 1.5rem; 
+    margin-bottom: 0.5rem; 
+    text-align: center; 
+    width: 100%; 
+}
+
+/* Estilo de los campos de entrada */
+.container__input {
+    width: 100%; /* Ancho fijo para los campos de entrada */
+    height: 600px; /* Altura fija para los campos de entrada */
+    padding: 1rem; /* Espacio interno adicional */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho y alto */
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+    overflow: auto; /* Añade scroll si el contenido excede el tamaño del textarea */
+    text-align: left; /* Alinea el texto a la izquierda */
+    vertical-align: top; /* Alinea el texto en la parte superior */
+}
+
+/* Estilo de los botones */
+.container__botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los botones */
+    margin-top: 1rem; /* Espacio arriba de los botones */
+}
+
+.container__boton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container__boton:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: rgba(72, 136, 255, 0.9); /* Fondo con 70% de opacidad */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0; /* Reduce el padding del footer */
+    font-size: 0.875rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilo para el mensaje de advertencia */
+.warning-message {
+    color: #ff0000; /* Color rojo para el texto de advertencia */
+    font-size: 0.875rem; /* Tamaño de fuente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem; /* Espacio superior */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+.warning-message i {
+    margin-right: 0.5rem; /* Espacio a la derecha del icono */
+}
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+
+        background-repeat: repeat; 
+        background-position: center; 
+    }
+    .container {
+        width: 80%; /* Reduce el ancho del contenedor a un porcentaje menor */
+        padding: 1rem; /* Ajusta el padding del contenedor */
+        margin-top: 35rem; /* Reduce el margen superior del contenedor */
+    }
+    .input-wrapper {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .input-container, .input-container-2 {
+        width: 100%; /* Ancho completo para los contenedores de inputs */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .container__input {
+        height: 300px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .header {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .container__boton {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+
+        background-repeat: repeat; 
+        background-position: center; 
+    }
+    .header h1 {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        width: 80%; /* Reduce el ancho del contenedor a un porcentaje menor */
+        padding: 1rem; /* Ajusta el padding del contenedor */
+        margin-top: 25rem; /* Reduce el margen superior del contenedor */
+    }
+
+    .container__input {
+        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .container__boton {
+        font-size: 0.75rem;
+    }
+}
