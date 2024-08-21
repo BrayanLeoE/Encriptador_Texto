@@ -36,4 +36,5 @@
     <li>El texto procesado aparecerá en el campo "Texto procesado".</li>
     <li>Puedes copiar el texto procesado al portapapeles haciendo clic en el botón "Copiar".</li>
 </ol>
-
+<h2>Autor</h2>
+<p>Brayan Estupiñán</p>
