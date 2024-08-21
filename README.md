@@ -3,6 +3,9 @@
 
 <p>Este proyecto es una aplicación web que permite encriptar y desencriptar textos utilizando un conjunto específico de reglas de transformación. Es ideal para enviar mensajes de manera que solo aquellos con la clave correcta puedan entenderlos.</p>
 
+<h2>Enlace a la Aplicación</h2>
+    <p> <a href="https://brayanleoe.github.io/Encriptador_Texto/" target="_blank">¡Puedes probar el encriptador de texto dando click aqui!</a> </p>
+
 <h2>Características</h2>
 <ul>
     <li><strong>Encriptación personalizada:</strong> Convierte cada vocal en una secuencia única de caracteres.</li>
